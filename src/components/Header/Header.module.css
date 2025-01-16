@@ -1,0 +1,23 @@
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.elem {
+  list-style: none;
+  color: white;
+  background-color: #8a4098;
+  padding: 8px 12px;
+  border-radius: 5px;
+}

@@ -1,0 +1,40 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.imgBanner {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.txt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.textBox {
+  flex: 2;
+  color: var(--main-text-color);
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .imgBanner {
+    margin-bottom: 20px;
+  }
+}

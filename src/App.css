@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+
+:root {
+  --main-bg-color: #391643;
+  --secondary-bg-color: #4a1b57;
+  --main-text-color: #fe8ab1;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--main-text-color);
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
