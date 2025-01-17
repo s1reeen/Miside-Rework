@@ -19,3 +19,11 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}

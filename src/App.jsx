@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Features from "./components/Features/Features";
 import Story from "./components/Story/Story";
 import Reviews from "./components/Reviews/Reviews";
-
+import Download from "./components/Download/Download";
 const App = () => {
   return (
     <div>
@@ -16,6 +16,7 @@ const App = () => {
       <Features />
       <Story />
       <Reviews />
+      <Download />
     </div>
   );
 };
