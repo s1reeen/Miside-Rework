@@ -1,0 +1,21 @@
+.story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 100px 30px;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.video {
+  border-radius: 12px;
+}
+
+@media (max-width: 1200px) {
+  .story {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,43 @@
+.reviews {
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviewsSection {
+  background-color: var(--secondary-bg-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.txt {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.txt:nth-child(2n + 1) {
+  font-style: italic;
+}
+
+.content {
+  background: #371541;
+  padding: 20px;
+  border-radius: 12px;
+}
