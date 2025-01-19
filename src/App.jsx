@@ -7,6 +7,9 @@ import Features from "./components/Features/Features";
 import Story from "./components/Story/Story";
 import Reviews from "./components/Reviews/Reviews";
 import Download from "./components/Download/Download";
+import Questions from "./components/Quenstions/Questions";
+import Footer from "./components/Footer/Footer";
+
 const App = () => {
   return (
     <div>
@@ -17,6 +20,8 @@ const App = () => {
       <Story />
       <Reviews />
       <Download />
+      <Questions />
+      <Footer />
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Download = () => {
         <p className={css.txt}>Download MiSide Today</p>
         <iframe
           src="https://store.steampowered.com/widget/2527500/"
-          frameborder="0"
+          frameBorder="0"
           width="646"
           height="190"
         ></iframe>
@@ -25,31 +25,31 @@ const Download = () => {
             <li className={css.icon}>
               <LuMonitorUp />
               <span>OS:</span>
-              <span clas>Windows 7/8/10</span>
+              <span className={css.txtSec}>Windows 7/8/10</span>
             </li>
             <li className={css.icon}>
               <FaMicrochip />
               <span>Processor:</span>
-              <span clas>
+              <span className={css.txtSec}>
                 Intel Core i5-2300 @ 2,80 GHz, AMD FX 8120 @ 3.1 GHz
               </span>
             </li>
             <li className={css.icon}>
               <FaMemory />
               <span>Memory:</span>
-              <span clas>4 GB RAM</span>
+              <span className={css.txtSec}>4 GB RAM</span>
             </li>
             <li className={css.icon}>
               <BsGpuCard />
               <span>Graphics:</span>
-              <span clas>
+              <span className={css.txtSec}>
                 NVIDIA GT 630 / 650m, AMD Radeon HD6570 or equivalent
               </span>
             </li>
             <li className={css.icon}>
               <MdStorage />
               <span>Storage:</span>
-              <span clas>2 GB available space</span>
+              <span className={css.txtSec}>2 GB available space</span>
             </li>
           </ul>
         </div>
@@ -91,4 +91,5 @@ const Download = () => {
     </section>
   );
 };
+
 export default Download;

@@ -1,0 +1,46 @@
+.footer {
+  background: var(--main-bg-color);
+  color: #c7c7c7;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 30px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.icon {
+  color: #dbdbdb;
+  font-size: 1.3rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #dbdbdb;
+  padding: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: #dbdbdb;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: rgb(56, 95, 223);
+}
+
+.block {
+  border-bottom: 1px solid #5f5f5f;
+}
+
+.secblock {
+  padding: 20px 0px;
+}
