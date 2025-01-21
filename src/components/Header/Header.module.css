@@ -1,23 +1,151 @@
 .logo {
-  width: 200px;
+  width: 180px;
   height: auto;
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: rgba(57, 22, 67, 0.8);
+  backdrop-filter: blur(10px);
+  height: 70px;
+}
+
+.headerWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.burgerButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burgerLine {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burgerLine.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burgerLine.open:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerLine.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .menu {
+  position: fixed;
+  top: 70px;
+  right: -350px;
+  width: 350px;
+  height: calc(100vh - 70px);
+  background-color: rgba(36, 17, 41, 0.9);
+  backdrop-filter: blur(10px);
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  flex-direction: column;
+  transition: right 0.3s ease;
+  z-index: 4;
 }
 
-.elem {
+.menuOpen {
+  right: 0;
+}
+
+.menu ul {
   list-style: none;
-  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 15px;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #f38ab1;
+  text-emphasis: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
   background-color: #8a4098;
-  padding: 8px 12px;
-  border-radius: 5px;
+  color: #e6e6e6;
+}
+
+.active {
+  background-color: #8a4098;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .burgerButton {
+    display: flex;
+  }
+
+  .menu {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    background-color: transparent;
+    backdrop-filter: none;
+    color: white;
+    align-items: center;
+    justify-content: flex-end;
+    top: auto;
+  }
+
+  .menu ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu li {
+    margin-bottom: 0;
+  }
+
+  .burgerButton {
+    display: none;
+  }
 }

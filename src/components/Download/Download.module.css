@@ -28,6 +28,19 @@
   border-radius: 15px;
 }
 
+.iframeWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 646px;
+  margin: 0 auto;
+}
+
+.iframeWrapper iframe {
+  width: 100%;
+  height: 190px;
+  border: none;
+}
+
 .title {
   padding: 0;
   margin: 0;

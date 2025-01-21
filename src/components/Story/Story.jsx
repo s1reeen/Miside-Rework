@@ -17,16 +17,18 @@ const Story = () => {
           truth behind MiTa's secrets? Only in MiSide will you find out.
         </p>
       </div>
-      <iframe
-        className={css.video}
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/yEAhtiVTomI?si=td12trqSULwy8h_s"
-        frameBorder="0"
-        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
+      <div className={css.iframeWrapper}>
+        <iframe
+          className={css.video}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/yEAhtiVTomI?si=td12trqSULwy8h_s"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </div>
     </section>
   );
 };

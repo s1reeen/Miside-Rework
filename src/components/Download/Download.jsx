@@ -11,12 +11,14 @@ const Download = () => {
       <div className={css.download}>
         <h2 className={css.downloadTitle}>Download MiSide Today</h2>
         <p className={css.txt}>Download MiSide Today</p>
-        <iframe
-          src="https://store.steampowered.com/widget/2527500/"
-          frameBorder="0"
-          width="646"
-          height="190"
-        ></iframe>
+        <div className={css.iframeWrapper}>
+          <iframe
+            src="https://store.steampowered.com/widget/2527500/"
+            frameBorder="0"
+            width="646"
+            height="190"
+          ></iframe>
+        </div>
       </div>
       <div className={css.req}>
         <div className={css.reqContainer}>

@@ -1,23 +1,50 @@
 import css from "./Header.module.css";
 import logo from "../../assets/logo.png";
+import { useState } from "react";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
-    <section className={css.header}>
-      <div>
-        <img className={css.logo} src={logo} alt="" />
-      </div>
-      <div>
-        <nav>
-          <ul className={css.menu}>
-            <li className={css.elem}>Home</li>
-            <li className={css.elem}>Guides</li>
-            <li className={css.elem}>Endings</li>
-            <li className={css.elem}>Mita</li>
-          </ul>
-        </nav>
-      </div>
-    </section>
+    <>
+      <header className={css.header}>
+        <div className={css.headerWrapper}>
+          <img className={css.logo} src={logo} alt="logo" />
+          <button className={css.burgerButton} onClick={toggleMenu}>
+            <div
+              className={`${css.burgerLine} ${isMenuOpen ? css.open : ""}`}
+            />
+            <div
+              className={`${css.burgerLine} ${isMenuOpen ? css.open : ""}`}
+            />
+            <div
+              className={`${css.burgerLine} ${isMenuOpen ? css.open : ""}`}
+            />
+          </button>
+          <nav className={`${css.menu} ${isMenuOpen ? css.menuOpen : ""}`}>
+            <ul>
+              <li>
+                <a className={css.active} href="/">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="">Guides</a>
+              </li>
+              <li>
+                <a href="">Endings</a>
+              </li>
+              <li>
+                <a href="">Mita</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      {isMenuOpen && <div className={css.overlay} onClick={toggleMenu}></div>}
+    </>
   );
 };
 export default Header;
