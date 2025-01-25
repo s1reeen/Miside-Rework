@@ -3,6 +3,9 @@
   justify-content: space-between;
   gap: 20px;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
 }
 
 .imgBanner {
@@ -37,4 +40,10 @@
   .imgBanner {
     margin-bottom: 20px;
   }
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
 }

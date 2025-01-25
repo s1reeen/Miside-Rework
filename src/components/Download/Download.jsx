@@ -10,7 +10,10 @@ const Download = () => {
     <section className={css.downloadSection}>
       <div className={css.download}>
         <h2 className={css.downloadTitle}>Download MiSide Today</h2>
-        <p className={css.txt}>Download MiSide Today</p>
+        <p className={css.txt}>
+          Get ready to experience the game everyone is talking about! MiSide is
+          available for download now:
+        </p>
         <div className={css.iframeWrapper}>
           <iframe
             src="https://store.steampowered.com/widget/2527500/"
