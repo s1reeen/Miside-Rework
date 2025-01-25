@@ -22,7 +22,6 @@
 .reqContainer {
   display: flex;
   flex-direction: column;
-
   background-color: var(--secondary-bg-color);
   padding: 30px;
   border-radius: 15px;
