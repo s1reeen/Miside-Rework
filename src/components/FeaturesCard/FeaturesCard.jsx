@@ -1,4 +1,4 @@
-import css from "./FeaturesCard.module.css";
+import css from "./Featurescard.module.css";
 
 const FeaturesCard = ({ title, description, points, svg }) => {
   return (
