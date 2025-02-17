@@ -60,3 +60,10 @@
   position: relative;
   top: 3px;
 }
+
+@media (max-width: 768px) {
+  .scrollToTopButton {
+    bottom: 10px;
+    right: 10px;
+  }
+}

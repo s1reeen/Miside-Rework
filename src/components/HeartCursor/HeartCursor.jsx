@@ -9,10 +9,12 @@ export default function HeartCursor() {
   const [targetPosition, setTargetPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(window.innerWidth > 768);
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
       setIsVisible(window.innerWidth > 768);
+      setIsMobile(window.innerWidth <= 768);
     };
 
     window.addEventListener("resize", handleResize);
@@ -76,16 +78,18 @@ export default function HeartCursor() {
           <IoMdHeart className={styles.heartIcon} />
         </div>
       )}
-      <button
-        className={styles.toggleButton}
-        onClick={() => setIsVisible(!isVisible)}
-      >
-        {isVisible ? (
-          <IoMdHeartDislike className={styles.heartButton} />
-        ) : (
-          <IoMdHeart className={styles.heartButton} />
-        )}
-      </button>
+      {!isMobile && (
+        <button
+          className={styles.toggleButton}
+          onClick={() => setIsVisible(!isVisible)}
+        >
+          {isVisible ? (
+            <IoMdHeartDislike className={styles.heartButton} />
+          ) : (
+            <IoMdHeart className={styles.heartButton} />
+          )}
+        </button>
+      )}
       {showScrollButton && (
         <button className={styles.scrollToTopButton} onClick={scrollToTop}>
           <IoIosArrowUp className={styles.scrollIcon} />
