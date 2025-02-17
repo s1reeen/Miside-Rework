@@ -7,6 +7,7 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
     <>
       <header className={css.header}>
@@ -26,18 +27,18 @@ const Header = () => {
           <nav className={`${css.menu} ${isMenuOpen ? css.menuOpen : ""}`}>
             <ul>
               <li>
-                <a className={css.active} href="/">
+                <a className={css.active} href="#home">
                   Home
                 </a>
               </li>
               <li>
-                <a href="">Guides</a>
+                <a href="#features">Features</a>
               </li>
               <li>
-                <a href="">Endings</a>
+                <a href="#download">Download</a>
               </li>
               <li>
-                <a href="">Mita</a>
+                <a href="#faq">FAQ</a>
               </li>
             </ul>
           </nav>
@@ -47,4 +48,5 @@ const Header = () => {
     </>
   );
 };
+
 export default Header;

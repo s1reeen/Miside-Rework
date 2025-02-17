@@ -58,7 +58,7 @@ const Questions = () => {
   ];
 
   return (
-    <section className={css.questions}>
+    <section id="faq" className={css.questions}>
       <div className={css.wrapper}>
         <h2 className={css.title}>Frequently Asked Questions</h2>
         <div className={css.container}>

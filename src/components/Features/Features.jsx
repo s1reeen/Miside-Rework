@@ -58,7 +58,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className={css.features}>
+    <section id="features" className={css.features}>
       <h2 className={css.title}>Experience MiSide's Unique Features</h2>
       <div className={css.cardsContainer}>
         {features.map((feature, index) => (

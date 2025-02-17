@@ -7,7 +7,7 @@ import css from "./Download.module.css";
 
 const Download = () => {
   return (
-    <section className={css.downloadSection}>
+    <section id="download" className={css.downloadSection}>
       <div className={css.download}>
         <h2 className={css.downloadTitle}>Download MiSide Today</h2>
         <p className={css.txt}>

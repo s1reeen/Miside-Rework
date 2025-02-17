@@ -1,0 +1,62 @@
+.heart-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.heart-icon {
+  color: rgb(204, 96, 172);
+  font-size: 1.5rem;
+}
+
+.toggleButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 13px;
+  background-color: transparent;
+  border: 2px solid #9e25b6;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: background 0.3s;
+  z-index: 50;
+}
+
+.toggleButton:hover {
+  background-color: #9e25b6;
+}
+
+.heartButton {
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.scrollToTopButton {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  padding: 9px 11px;
+  background-color: transparent;
+  border: 2px solid #9e25b6;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: background 0.3s;
+  z-index: 100;
+}
+
+.scrollToTopButton:hover {
+  background-color: #9e25b6;
+}
+
+.scrollIcon {
+  font-size: 25px;
+  position: relative;
+  top: 3px;
+}

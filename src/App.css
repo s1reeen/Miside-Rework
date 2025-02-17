@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --main-bg-color: #391643;
@@ -14,6 +15,10 @@ body {
   color: var(--main-text-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -26,4 +31,13 @@ li {
 
 ul {
   padding: 0;
+}
+
+p,
+span,
+button,
+li,
+a,
+h3 {
+  font-family: "Roboto", serif;
 }

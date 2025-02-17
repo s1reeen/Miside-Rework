@@ -5,13 +5,13 @@ const Story = () => {
     <section className={css.story}>
       <div className={css.content}>
         <h2 className={css.title}>Unravel the Story of MiSide</h2>
-        <p>
+        <p className={css.description}>
           The story centers around MiTa, a virtual character who begins as a
           friendly companion but gradually reveals her sinister side. As the
           protagonist, you're drawn into her world, where every interaction
           uncovers new layers of mystery and fear.
         </p>
-        <p>
+        <p className={css.description}>
           Nothing is as it seems. What starts as a lighthearted adventure
           transforms into a gripping psychological thriller. Can you uncover the
           truth behind MiTa's secrets? Only in MiSide will you find out.

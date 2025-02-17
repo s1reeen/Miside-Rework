@@ -59,6 +59,7 @@ const Hero = () => {
 
   return (
     <section
+      id="home"
       className={css.hero}
       style={{
         backgroundImage: isMobile ? `url(${phoneBG})` : "none",
